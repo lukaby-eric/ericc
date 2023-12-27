@@ -1,6 +1,8 @@
 
 @media only screen and (max-width: 1200px){
-   
+    #slide-left{
+        display: block;
+    }
   
 }
 @media only screen and (max-width: 1000px){
@@ -46,6 +48,10 @@
         cursor: pointer;
         outline: none;
     }
+    #about #language{
+        height: 140px;
+        width: 120px;
+    }
   
 }
 
@@ -84,8 +90,9 @@
     #web-designer h1{
         font-size: 35px;
     }
-    .skill-perentage{
-        padding-right: 0px;
+    #about #language{
+        height: 120px;
+        width: 100px;
     }
     
 }
