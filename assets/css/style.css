@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Yu Gothic Light';
+    text-decoration: none;
+    transition: .4s;
+}
+h3{
+    color: whitesmoke;
+}
+/* scroll bar */
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,rgb(2, 59, 85),transparent);
+}
+
+/* *************************************  NAVBAR   **************************************** */
+
+#navbar{
+    width: 300px;
+    background: linear-gradient(90deg,#055473,rgb(2, 59, 85),rgb(2, 59, 85));
+    height: 100dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 333;
+    box-shadow: 1px 1px 8px rgb(2, 59, 85);
+}
+
+.navBtn{
+    position: fixed;
+    right: 10%;
+    top: 30px;
+    font-size: 35px;
+    padding: 10px 15px;
+    background: transparent;
+    color: whitesmoke;
+    text-shadow: 0 0 8px black;
+    cursor: pointer;
+    display: none;
+    z-index: 444;
+}
+.navBtn:hover{
+    color: rgb(255, 162, 0);
+}
+.nav-head{
+    margin: 10px 0;
+}
+#navImg{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #055473;
+    box-shadow: 0px 0px 8px #02384d;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(45deg,black,black,#055473);
+}
+#navImg img{
+   height: 100%;
+   width: 100%; 
+}
+.nav-head h6{
+    color: whitesmoke;
+    margin: 20px 0;
+}
+.nav-head button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px 5px;
+    color: whitesmoke;
+    background-color:#055473;
+    cursor: pointer;
+    outline: none;
+}
+#facebook:hover{
+    background: #087faf;
+}
+#instagram:hover{
+    background: url(../images/ig.png);
+    background-size: cover;
+}
+#linkedin:hover{
+    background: #083daf;
+}
+#github:hover{
+    background: #000000;
+}
+#nav a{
+    text-decoration: none;
+}
+#nav #myUl{
+    padding: 10px;
+}
+#nav #myUl li{
+    padding: 10px 0;
+    cursor: pointer;
+}
+#nav #myUl i{
+    padding: 0 10px;
+}
+#nav #myUl a{
+    text-decoration: none;
+    color: rgb(216, 217, 218);
+    position: relative;
+}
+
+#nav #myUl a:hover{
+    color:#087faf;
+}
+#nav .lastcontent{
+    color: grey;
+}
+#hr-line{
+    height: 1px;
+    width: 100%;
+    background-color: #055473;
+}
+/* all pages */
+
+#all-pages{
+    margin-left: 300px;
+    position: relative;
+}
+/* home */
+#home video{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -2;
+    border-bottom-left-radius: 44%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(2, 59, 85, 0.557),rgb(2, 59, 85));
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+}
+#home{
+    height: 90%;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 59, 85);
+    color: white;
+    position: relative;
+    z-index: 11;
+}
+#home::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    bottom: -50px;
+    left: 0;
+    background: rgb(2, 59, 85);
+    border-top-left-radius: 100%;
+}
+#home .col-lg-8{
+    transform: translateY(50px);
+}
+#home h1{
+    font-family: 'Ink Free';
+}
+#home span{
+    color: rgb(167, 128, 30);
+    font-weight: bold;
+}
+#home a{
+    color: rgb(167, 128, 30);
+    text-decoration: none;
+}
+#home a:hover{
+    color: rgb(236, 173, 14);
+}
+#home button{
+    padding: 8px 20px;
+    border: none;
+    background: linear-gradient(45deg,black, #087faf,#09a6e4);
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    text-shadow: 0px 0px 4px rgb(51, 51, 51);
+}
+#home button:hover{
+    background: linear-gradient(-45deg,black, #087faf,#09a6e4);
+}
+/* about */
+#bignumber h1{
+    position: absolute;
+    font-size: 400px;
+    font-family: "MV Boli";
+    color: #055473;
+    z-index: -1;
+    opacity: .3;
+    left: 120px;
+    top: -100px;
+}
+#about{
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    background: rgb(2, 59, 85);
+    color: white;
+}
+
+#title{
+    height: 1px;
+    width: 50px;
+    background: rgb(167, 128, 30);
+}
+#about #languages .card{
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+#about #language{
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+/* -------------------------my work------------------------------- */
+#mywork{
+    position: relative;
+}
+#about .col-md-3 .card{
+    text-align: center;
+    border: none;
+    background: transparent;
+    margin-bottom: 30px;
+}
+#about .col-md-3 .card{
+    box-shadow: 0 0 5px rgb(2, 59, 85);
+    padding: 10px 5px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,rgb(2, 59, 85),rgb(3, 39, 56),black);
+}
+#about .col-md-3 .card .card-img{
+    background-color: rgba(167, 128, 30, 0.806);
+    border-radius: 50%;
+    color: black;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-30px);
+}
+#about .col-md-3 .card img{
+    width: 80%;
+}
+#about .col-md-3 .card h4{
+    font-weight: bold;
+    color: rgb(167, 128, 30);
+    padding: 10px 0 ;
+}
+#h4 a{
+    color: rgb(167, 128, 30);
+    text-decoration: none;
+}
+#h4 a:hover{
+    color: rgb(234, 181, 45);
+}
+#about #random-facts{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    text-shadow: 0 0 4px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    z-index: 1;
+}
+#about #random-facts::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(rgb(2, 59, 85),rgba(2, 59, 85, 0.665));
+}
+#about #random-facts button{
+    padding: 8px 20px;
+    border: none;
+    background: rgb(167, 128, 30);
+    color: white;
+    outline: none;
+    font-weight: bold;
+    text-shadow: none;
+    cursor: pointer;
+}
+#about #random-facts button:hover{
+    background: white;
+    color: rgb(2, 59, 85);
+}
+/* resume */
+#resume{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.982);
+    color: white;
+    height: 100dvh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: scale(0,0);
+}
+
+#resume #resume-content{
+    padding: 20px;
+    position: relative;
+}
+
+#resume #resume-content::before{
+    content: "";
+    height: 85%;
+    width: 2px;
+    background: rgb(120, 93, 23);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+}
+#resume #resume-content::after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: black;
+    border:2px solid rgb(120, 93, 23);
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    transform: translate(-7px,30px);
+}
+#resume h3{
+    color: rgb(120, 93, 23);
+}
+#resume #Professional{
+    color: rgb(255, 162, 0);
+}
+#resume #remote{
+    color: rgb(120, 93, 23);
+}
+#resume #close-cv-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: rgba(255, 0, 0, 0.624);
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#resume #close-cv-btn:hover{
+    background: rgba(255, 0, 0, 0.835);
+    transform: scale(1.1,1.1);
+}
+#resume #clse{
+    cursor: pointer;
+    color: white;
+}
+#resume #clse:hover{
+    color: red;
+}
+/* portfolio */
+
+#portfolio{
+    background: rgb(2, 59, 85);
+    position: relative;
+    z-index: 11;
+    margin-bottom: 100vh;
+}
+#portfolio h2{
+    color: whitesmoke;
+}
+#portfolio p{
+    color: whitesmoke;
+}
+#portfolio .col-lg-4{
+    margin-bottom: 20px;
+}
+#portfolio .card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding-bottom: 20px;
+}
+#portfolio .card:hover{
+    background: rgb(2, 59, 85);
+    cursor: pointer;
+}
+#portfolio .card img{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+#portfolio .card #card-img{
+    position: relative;
+    z-index: 1;
+}
+
+#portfolio .card:hover #work-img{
+    transform: scale(1.2,1.2);
+}
+#portfolio .card #card-img::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(2, 59, 85, 0.71);
+    z-index: 1;
+}
+#portfolio .card:hover #card-img::before {
+    background: transparent;
+}
+#portfolio .card .project-description p{
+
+    color: rgb(2, 59, 85);
+}
+#portfolio .card .project-description{
+    background: rgb(2, 59, 85);
+    padding: 20px 10px;
+    position: relative;
+    z-index: 1;
+}
+#portfolio .card .project-description::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    transform: translateY(-25px)skewY(10deg);
+    z-index: -1;
+}
+
+#portfolio .card .project-description #demo{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background: rgb(167, 128, 30);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#portfolio .card .project-description #demo:hover{
+    background: rgb(248, 188, 37);
+}
+#portfolio .card .project-description #github{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background: #000000;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#portfolio .card .project-description #github:hover{
+    background: #4a4949;
+}
+/* more work */
+#more-work{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+#less_work_button, #more_work_button{
+    background: transparent;
+    color: rgb(236, 173, 14);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+#less_work_button:hover, #more_work_button:hover{
+    color: whitesmoke;
+}
+/* contact */
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: url(../images/ft.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(2, 59, 85, 0.667), rgb(2, 59, 85));
+}
+#contact #titl{
+    color: rgb(250, 190, 38);
+}
+#contact .col-lg-8 a{
+    color: rgb(167, 128, 30);
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact .col-lg-8 a:hover{
+    color: rgb(250, 190, 38);
+}
